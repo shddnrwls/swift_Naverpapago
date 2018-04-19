@@ -12,6 +12,8 @@
 		0480BEBE208770BF0014AA28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0480BEBC208770BF0014AA28 /* Main.storyboard */; };
 		0480BEC0208770C10014AA28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0480BEBF208770C10014AA28 /* Assets.xcassets */; };
 		0480BEC3208770C10014AA28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0480BEC1208770C10014AA28 /* LaunchScreen.storyboard */; };
+		048EFD402088A08900B3F94B /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048EFD3F2088A08900B3F94B /* Translation.swift */; };
+		E28B9B47D5741649FAF474A2 /* Pods_Naverpapgo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2621129C81FB224132020D0B /* Pods_Naverpapgo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		0480BEBF208770C10014AA28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0480BEC2208770C10014AA28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0480BEC4208770C10014AA28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		048EFD3F2088A08900B3F94B /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		2621129C81FB224132020D0B /* Pods_Naverpapgo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Naverpapgo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		641FE12AEFE020D7A2059E16 /* Pods-Naverpapgo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naverpapgo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Naverpapgo/Pods-Naverpapgo.debug.xcconfig"; sourceTree = "<group>"; };
+		A59070AFB7A56B6415E3F89C /* Pods-Naverpapgo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naverpapgo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Naverpapgo/Pods-Naverpapgo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E28B9B47D5741649FAF474A2 /* Pods_Naverpapgo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				0480BEB7208770BF0014AA28 /* Naverpapgo */,
 				0480BEB6208770BF0014AA28 /* Products */,
+				3A13BAFAE8D26022A11A4DB4 /* Pods */,
+				B7280CC259D7220B09DE5A60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +67,28 @@
 				0480BEBA208770BF0014AA28 /* ViewController.swift */,
 				0480BEBC208770BF0014AA28 /* Main.storyboard */,
 				0480BEBF208770C10014AA28 /* Assets.xcassets */,
+				048EFD3F2088A08900B3F94B /* Translation.swift */,
 				0480BEC1208770C10014AA28 /* LaunchScreen.storyboard */,
 				0480BEC4208770C10014AA28 /* Info.plist */,
 			);
 			path = Naverpapgo;
+			sourceTree = "<group>";
+		};
+		3A13BAFAE8D26022A11A4DB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				641FE12AEFE020D7A2059E16 /* Pods-Naverpapgo.debug.xcconfig */,
+				A59070AFB7A56B6415E3F89C /* Pods-Naverpapgo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7280CC259D7220B09DE5A60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2621129C81FB224132020D0B /* Pods_Naverpapgo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0480BEC7208770C10014AA28 /* Build configuration list for PBXNativeTarget "Naverpapgo" */;
 			buildPhases = (
+				C3F2E10BC8250107D0A0EA8D /* [CP] Check Pods Manifest.lock */,
 				0480BEB1208770BF0014AA28 /* Sources */,
 				0480BEB2208770BF0014AA28 /* Frameworks */,
 				0480BEB3208770BF0014AA28 /* Resources */,
+				69618047404A56782207176A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		69618047404A56782207176A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Naverpapgo/Pods-Naverpapgo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Naverpapgo/Pods-Naverpapgo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3F2E10BC8250107D0A0EA8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Naverpapgo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0480BEB1208770BF0014AA28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +209,7 @@
 			files = (
 				0480BEBB208770BF0014AA28 /* ViewController.swift in Sources */,
 				0480BEB9208770BF0014AA28 /* AppDelegate.swift in Sources */,
+				048EFD402088A08900B3F94B /* Translation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +351,7 @@
 		};
 		0480BEC8208770C10014AA28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 641FE12AEFE020D7A2059E16 /* Pods-Naverpapgo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +369,7 @@
 		};
 		0480BEC9208770C10014AA28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A59070AFB7A56B6415E3F89C /* Pods-Naverpapgo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
